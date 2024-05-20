@@ -83,6 +83,7 @@ console.log(firstElement);
 
 // sort()
 fruits.sort();
+console.log(fruits);
 
 // slice()
 const citrus = fruits.slice(1, 3);
@@ -100,3 +101,25 @@ months.splice(4, 0, "May");
 // replaces 1 element at index 4
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+// -------------------Objects---------------------------
+
+// 1. Create object name (car)
+// 2. add (type, model, color) as properties
+// 3. check the type of object
+// 4. Update the type property to "Toyota"
+// 5. Add new property wheels
+// 6. log car to the console.
+
+const car = { type: "Fiat", model: "500", color: "white" };
+
+// Accessing Properties
+console.log(typeof car);
+
+// Updating Properties
+console.log(car.type);
+console.log((car.type = "Toyota"));
+
+// Add new properties
+console.log((car.wheels = 4));
+console.log(car);
