@@ -53,13 +53,19 @@ const arr1 = ["Cecile", "Lone"];
 const arr2 = ["Emil", "Tobias", "Linus"];
 const children = arr1.concat(arr2);
 
+console.log(children);
+
 // includes()
 let text = "Hello world, welcome to the universe.";
 let result = text.includes("world");
 
+console.log(result);
+
 // push()
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");
+
+console.log(fruits);
 
 // unshift()
 const array1 = [1, 2, 3];
@@ -81,6 +87,8 @@ fruits.sort();
 // slice()
 const citrus = fruits.slice(1, 3);
 
+console.log(citrus);
+
 // splice()
 const months = ["Jan", "March", "April", "June"];
 months.splice(1, 0, "Feb");
@@ -88,7 +96,7 @@ months.splice(1, 0, "Feb");
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "June"]
 
-months.splice(4, 1, "May");
+months.splice(4, 0, "May");
 // replaces 1 element at index 4
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
